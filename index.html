@@ -29,27 +29,32 @@
     </div>
 
     <form action="">
-      <input type="text" name="name" id="name">
-      <input type="text" name="lastname" id="lastname">
+      <input type="text" name="name" id="name" placeholder="Imię *">
+      <input type="text" name="lastname" id="lastname" placeholder="Nazwisko *">
+
       <select name="prefix" id="prefix">
         <option value="pl">Polska +(48)</option>
         <option value="us">USA (+1)</option>
       </select>
-      <input type="number" name="phonenumber" id="phone_number">
+
+      <input type="number" name="phonenumber" id="phone_number" placeholder="Numer telefonu *">
       <!-- check box agreements -->
       <div class="check-box-wrap">
         <input type="checkbox" id="first_agree" name="first_agree">
-        <label for="first_agree"> *Wyrażam zgodę na kontakt telefoniczny przez upoważnioną przez LOT agencję badawczą na
-          wskazany numer telefonu w celu przeprowadzenia badania opinii.</label><br>
+        <label for="first_agree"> *Wyrażam zgodę na kontakt telefoniczny przez upoważnioną przez LOT agencję badawczą
+          na wskazany numer telefonu w celu przeprowadzenia badania opinii.</label><br><br>
         <input type="checkbox" id="second_agree" name="second_agree">
         <label for="second_agree"> *Jednocześnie oświadczam, że dobrowolnie podaję dane oraz że jestem poinformowany/a o
-          prawie wglądu do podanych danych oraz możliwości ich poprawiania.<br><br>
-          Zgoda może być cofnięta w dowolnym momencie, co nie wpływa na zgodność z prawem przetwarzania danych
-          dokonanego przed jej cofnięciem. Aby wycofać zgodę należy wysłać wiadomość na adres: <a
-            href="mailto: contact.mailing@lot.pl">contact.mailing@lot.pl</a> w tytule maila wpisując "wycofanie zgody -
-          sprzeciw wobec przetwarzania danych". </label><br>
-        <a href="#">Informacje nt. przetwarzania danych.</a>
-        <p>* Pola obowiązkowe</p>
+          prawie wglądu do podanych danych oraz możliwości ich poprawiania.<br></label>
+
+        <p>Zgoda może być cofnięta w dowolnym momencie, co nie wpływa na zgodność z prawem przetwarzania danych
+          dokonanego przed jej cofnięciem. Aby wycofać zgodę należy wysłać wiadomość na adres:
+          <a class="contact-mail" href="mailto: contact.mailing@lot.pl">contact.mailing@lot.pl</a>
+          w tytule maila wpisując "wycofanie zgody - sprzeciw wobec przetwarzania danych".
+        </p>
+
+        <a href="#" class="data-info">Informacje nt. przetwarzania danych.</a>
+        <p class="data-claimer">* Pola obowiązkowe</p>
       </div>
       <input type="submit" value="Wyślij">
     </form>
