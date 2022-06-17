@@ -3,6 +3,8 @@ const dropdown_list = document.querySelector('.dropdown-list') //point to list o
 const options = document.querySelectorAll('.dropdown-list li') //point to all dropdown options elements
 const selected = document.querySelector('.selected') //point to current display option
 
+const alert_text = document.querySelector('.alert-box')
+
 // point to all user input values
 var input_name = document.getElementById('name')
 var input_lastname = document.getElementById('lastname')
@@ -22,11 +24,24 @@ options.forEach(option => {
   })
 })
 
+// hide alert box
+function hideAlertBox(){
+  setTimeout(() => {
+    alert_text.classList.remove('visible')
+  }, 1500)
+}
+
 // form validation
 function validateForm(){
-  if(input_name.value.length == 0) return alert('Uzupełnij wszystkie pola')
-  if(input_lastname.value.length == 0) return alert('Uzupełnij wszystkie pola')
-  if(input_phone.value.length == 0) return alert('Uzupełnij wszystkie pola')
-  if(!input_checkbox1.checked) return alert('Zaznacz wymagane zgody')
-  if(!input_checkbox2.checked) return alert('Zaznacz wymagane zgody')
+  if(input_name.value.length == 0 || input_lastname.value.length == 0 || input_phone.value.length == 0){
+    alert_text.classList.add('visible')
+    hideAlertBox()
+    return false
+  }
+  if(!input_checkbox1.checked || !input_checkbox2.checked){
+    alert_text.classList.add('visible')
+    hideAlertBox()
+    return false
+  }
+  return true
 } 
