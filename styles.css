@@ -33,7 +33,7 @@ nav.top-sticky-nav a{
 /* Form container styles */
 .form-conatiner{
   min-height: 100vh;
-  background-image: url("./images/lot-background-photo.png");
+  background-image: url("./images/lot-background-photo.webp");
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
