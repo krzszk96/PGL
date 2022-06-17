@@ -32,10 +32,17 @@
       <input type="text" name="name" id="name" placeholder="Imię *">
       <input type="text" name="lastname" id="lastname" placeholder="Nazwisko *">
 
-      <select name="prefix" id="prefix">
-        <option value="pl">Polska +(48)</option>
-        <option value="us">USA (+1)</option>
-      </select>
+      <!-- Custom select dropdown -->
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">Polska (+48)</span>
+          <div class="arrow"></div>
+        </div>
+        <ul class="dropdown-list">
+          <li>Polska (+48)</li>
+          <li>USA (+1)</li>
+        </ul>
+      </div>
 
       <input type="number" name="phonenumber" id="phone_number" placeholder="Numer telefonu *">
       <!-- check box agreements -->

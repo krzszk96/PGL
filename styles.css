@@ -5,6 +5,7 @@ body{
 *, *::after, *::before{
   box-sizing: border-box;
 }
+/* Top nav styles */
 nav.top-sticky-nav{
   display: flex;
   justify-content: space-between;
@@ -28,6 +29,7 @@ nav.top-sticky-nav a{
   text-decoration: none;
   margin-right: 1rem;
 }
+/* Form container styles */
 .form-conatiner{
   min-height: 100vh;
   background-image: url("./images/lot-background-photo.png");
@@ -37,6 +39,7 @@ nav.top-sticky-nav a{
 
   font-family: 'Lato', sans-serif;
   padding: 40px;
+  padding-bottom: 200px;
 }
 .form-conatiner .title{
   font-size: 2rem;
@@ -50,6 +53,7 @@ nav.top-sticky-nav a{
   font-weight: 300;
   margin: 20px 0;
 }
+/* Form input styles */
 .form-conatiner form{
   display: flex;
   flex-direction: column;
@@ -71,6 +75,56 @@ nav.top-sticky-nav a{
 .form-conatiner form input[type='number']::placeholder {
   font-weight: 700;
   color: #0957AD;
+}
+/* Form select custom style */
+.dropdown{
+  width: 100%;
+  position: relative;
+  margin: 5px 0;
+}
+.select{
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:none;
+  border-radius: 5px;
+  padding: 15px 15px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.select:hover{
+  color: #0957AD;
+}
+.dropdown-list{
+  position: absolute;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  top: 2rem;
+  padding: 0 15px;
+  /* border: 1px solid #e5e9f2; */
+  z-index: 1;
+  display: none;
+  box-shadow: 4px 4px 15px -11px rgba(66, 68, 90, 1);
+}
+.dropdown-list li{
+  padding: 15px 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.dropdown-list li:first-child{
+  border-bottom: 0.5px solid #e5e9f2;
+}
+.dropdown-list li:hover{
+  color: #0957AD;
+}
+.dropdown-list-open{
+  display: block;
 }
 .form-conatiner select#prefix{
   margin: 5px 0;
@@ -123,6 +177,8 @@ nav.top-sticky-nav a{
 .form-conatiner form input[type='submit']{
   max-width: 150px;
   padding: 15px 35px;
+  font-weight: 700;
+  font-size: 0.8rem;
   border: none;
   border-radius: 5px;
   color: #fff;
