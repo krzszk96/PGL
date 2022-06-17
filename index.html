@@ -5,17 +5,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>LOT Form</title>
   <link href="styles.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700" rel="stylesheet">
 </head>
 
 <body>
 
   <nav class="top-sticky-nav">
-    <img src="./images/lot-logo.svg" alt="Lot">
+    <img class="logo" src="./images/lot-logo.svg" alt="Lot">
     <a href="https://www.lot.com/pl/en">Powrót na lot.com</a>
   </nav>
+
+  <div class="form-conatiner">
+    <div class="title">TWOJA OPINIA JEST DLA NAS WAŻNA</div>
+    <div class="description">Zapraszamy Cię do wzięcia udziału w badaniu.<br><br>
+      Chcemy poznać Twoją opinię o nowej stronie do rezerwacji biletów lotniczych.<br>
+      Czy strona jest intuicyjna i zrozumiała? Czy rezerwacja biletów jest łatwa i bezproblemowa?<br>
+      Oceń nasz projekt i daj nam znać, co o nim myślisz!<br><br>
+      Jeżeli chcesz wziąć udział w badaniu, wypełnij poniższy formularz.<br><br>
+      W przypadku wybrania Twojej kandydatury, skantaktuje się z Tobą agencja badawcza realizująca projekt i przedstawi
+      Ci kolejne kroki, a także pomoże ustalić dogodny termin i godzinę spotkania online.
+    </div>
+
+    <form action="">
+      <input type="text" name="name" id="name">
+      <input type="text" name="lastname" id="lastname">
+      <select name="prefix" id="prefix">
+        <option value="pl">Polska +(48)</option>
+        <option value="us">USA (+1)</option>
+      </select>
+      <input type="number" name="phonenumber" id="phone_number">
+      <!-- check box agreements -->
+      <div class="check-box-wrap">
+        <input type="checkbox" id="first_agree" name="first_agree">
+        <label for="first_agree"> *Wyrażam zgodę na kontakt telefoniczny przez upoważnioną przez LOT agencję badawczą na
+          wskazany numer telefonu w celu przeprowadzenia badania opinii.</label><br>
+        <input type="checkbox" id="second_agree" name="second_agree">
+        <label for="second_agree"> *Jednocześnie oświadczam, że dobrowolnie podaję dane oraz że jestem poinformowany/a o
+          prawie wglądu do podanych danych oraz możliwości ich poprawiania.<br><br>
+          Zgoda może być cofnięta w dowolnym momencie, co nie wpływa na zgodność z prawem przetwarzania danych
+          dokonanego przed jej cofnięciem. Aby wycofać zgodę należy wysłać wiadomość na adres: <a
+            href="mailto: contact.mailing@lot.pl">contact.mailing@lot.pl</a> w tytule maila wpisując "wycofanie zgody -
+          sprzeciw wobec przetwarzania danych". </label><br>
+        <a href="#">Informacje nt. przetwarzania danych.</a>
+        <p>* Pola obowiązkowe</p>
+      </div>
+      <input type="submit" value="Wyślij">
+    </form>
+  </div>
 
   <script src="main.js"></script>
 </body>
