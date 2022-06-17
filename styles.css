@@ -14,6 +14,7 @@ nav.top-sticky-nav{
   width: 100%;
   padding: 1rem 0;
   background-color: #fff;
+  z-index: 2;
 }
 nav.top-sticky-nav img.logo{
   margin-left: 1rem;
@@ -65,6 +66,7 @@ nav.top-sticky-nav a{
   padding: 15px 15px;
   border: none;
   border-radius: 5px;
+  font-weight: 700;
   color: #0957AD;
 }
 .form-conatiner form input[type='text']:focus,
