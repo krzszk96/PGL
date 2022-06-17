@@ -1,0 +1,34 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+nav.top-sticky-nav{
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #fff;
+}
+nav.top-sticky-nav img.logo{
+  margin-left: 1rem;
+}
+nav.top-sticky-nav a{
+  color: #fff;
+  background-color: #0957AD;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.form-conatiner{
+  min-height: 100vh;
+  background-image: url("./images/lot-background-photo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
