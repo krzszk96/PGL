@@ -20,7 +20,7 @@ dropdown.addEventListener('click', ()=>{
 // display choosed option in display container
 options.forEach(option => {
   option.addEventListener('click', () => {
-    selected.innerHTML = option.innerHTML
+    selected.innerHTML = option.innerHTML  + `<i class="arrow down"></i>`
   })
 })
 
