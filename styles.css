@@ -40,7 +40,12 @@ nav.top-sticky-nav a{
 
   font-family: 'Lato', sans-serif;
   padding: 40px;
-  padding-bottom: 200px;
+  padding-bottom: 200px;  
+}
+@media only screen and (max-width:  768px) {
+  .form-conatiner{
+    padding: 20px;
+  }   
 }
 .form-conatiner .title{
   font-size: 2rem;
