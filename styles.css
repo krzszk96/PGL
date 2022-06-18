@@ -82,6 +82,9 @@ nav.top-sticky-nav a{
 .form-conatiner form input[type='number']::placeholder {
   font-weight: 700;
   color: #0957AD;
+  font-family: 'Lato', sans-serif;
+  opacity: 1;
+  /* opacity for firefox */
 }
 /* Form select custom style */
 .dropdown{
