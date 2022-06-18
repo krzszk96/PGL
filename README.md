@@ -2,7 +2,7 @@
 
 ###### Project description
 
-Functionalities:
+Functionalities and Features:
 
 1. Form validation
 2. Custom select dropdown
