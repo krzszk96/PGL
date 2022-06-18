@@ -192,6 +192,8 @@ nav.top-sticky-nav a{
   background-color: #0A3479;
   cursor: pointer;
   margin-bottom: 49px;
+  -webkit-appearance: initial; 
+  /* safari padding fix */
 }
 .alert-wrap{
   position: relative;
