@@ -10,7 +10,7 @@ Functionalities:
 
 Technologies used:
 
-1. [HTML](https://img.shields.io/badge/HTML-%20-orange)
+1. ![HTML](https://img.shields.io/badge/HTML-%20-orange)
 2. https://img.shields.io/badge/CSS-%20-green
 3. https://img.shields.io/badge/JavaScript-%20-yellow
 
