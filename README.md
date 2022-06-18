@@ -8,11 +8,7 @@ Functionalities:
 2. Custom select dropdown
 3. Custom form validation alert
 
-Technologies used:
-
-1. ![HTML](https://img.shields.io/badge/HTML-%20-orange)
-2. https://img.shields.io/badge/CSS-%20-green
-3. https://img.shields.io/badge/JavaScript-%20-yellow
+Technologies used: ![HTML](https://img.shields.io/badge/HTML-%20-orange) ![CSS](https://img.shields.io/badge/CSS-%20-green) ![JavaScript](https://img.shields.io/badge/JavaScript-%20-yellow)
 
 ###### Desing by PGL
 
