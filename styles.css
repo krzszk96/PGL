@@ -113,7 +113,6 @@ nav.top-sticky-nav a{
   width: 100%;
   top: 2rem;
   padding: 0 15px;
-  /* border: 1px solid #e5e9f2; */
   z-index: 1;
   display: none;
   box-shadow: 4px 4px 15px -11px rgba(66, 68, 90, 1);
@@ -133,18 +132,7 @@ nav.top-sticky-nav a{
 .dropdown-list-open{
   display: block;
 }
-.form-conatiner select#prefix{
-  margin: 5px 0;
-  width: 100%;
-  padding: 15px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 700;
-}
-.form-conatiner select#prefix:focus{
-  outline: none;
-}
+/* check box styling */
 .check-box-wrap{
   position: relative;
   margin: 30px 0;
